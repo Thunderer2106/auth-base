@@ -26,3 +26,6 @@ dist/
 coverage/
 .tmp/
 .cache/
+
+
+knexfile.js.bak

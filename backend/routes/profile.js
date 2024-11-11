@@ -1,10 +1,11 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
-const knex = require("../db/knexfile");
+const knex = require("../db/db");
 const verifyToken = require("../middleware/authMiddleware");
 const router = express.Router();
 
 router.get("/me", verifyToken, async (req, res) => {
+  console.log("it came to profile fetch");
   const user = await knex("users").where({ id: req.user.id }).first();
   res.json(user);
 });

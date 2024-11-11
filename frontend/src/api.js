@@ -10,6 +10,20 @@ export const getProfile = (token) =>
   api.get("/profile/me", {
     headers: { Authorization: token },
   });
+// export const getProfile = async () => {
+//   const token = localStorage.getItem("token");
+//   try {
+//     const response = await api.get("/profile/me", {
+//       headers: {
+//         Authorization: `Bearer ${token}`,
+//       },
+//     });
+//     return response.data;
+//   } catch (error) {
+//     console.error("Error fetching profile:", error);
+//     throw error;
+//   }
+// };
 export const updateProfile = (data, token) =>
   api.put("/profile/me", data, {
     headers: { Authorization: token },
