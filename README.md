@@ -6,14 +6,19 @@ This project was bootstrapped with React, Node, PostgreSQL, and Knex.The project
 
 In the project directory, you can run:
 
-### Snippets
+### Frontend
 
-```bash
+```
 cd frontend
 npm start
-```bash
+```
 
-### Snippets
+### Backend
+```
+cd backend
+nodemon server.js
+```
+
 
 
 
