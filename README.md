@@ -11,4 +11,14 @@ In the project directory, you can run:
 ```bash
 cd frontend
 npm start
-  
+
+
+### Backend
+
+```bash
+cd backend
+nodemon server.js
+
+The project is deployed at https://base-auth.vercel.app/ and supabase is used as cloud postgres database
+
+
